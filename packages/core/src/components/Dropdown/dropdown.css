@@ -1,0 +1,69 @@
+.root {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.label {
+  width: 100%;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(223, 225, 226);
+  border-radius: 4px;
+  padding: 0.4rem 1rem 0.4rem 0.5rem;
+  cursor: pointer;
+}
+
+.closeMenu {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  border: 2px solid rgb(223, 225, 226);
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.2s;
+}
+
+.openMenu {
+  opacity: 1;
+  height: 100%;
+  border: 2px solid rgb(223, 225, 226);
+  background-color: rgb(255, 255, 255);
+  border-top-width: 0px;
+  transition: 0.5s;
+}
+
+.items {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
+}
+
+.itemsActive {
+  composes: items;
+  z-index: 1;
+}
+
+.item {
+  padding: 0.6rem;
+  cursor: pointer;
+}
+
+.itemActive {
+  composes: item;
+}
+
+.item:hover,
+.itemActive {
+  background-color: rgb(244, 245, 245);
+}

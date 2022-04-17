@@ -1,0 +1,28 @@
+.root {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.9rem;
+}
+
+.input {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(223, 225, 226);
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.textVisible {
+  font-size: 0.75rem;
+  display: block;
+}
+
+.textInvisible {
+  display: none;
+}

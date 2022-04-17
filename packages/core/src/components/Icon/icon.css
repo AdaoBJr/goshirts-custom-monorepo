@@ -1,0 +1,18 @@
+.root {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  touch-action: manipulation;
+}
+
+.icon {
+  color: rgb(37, 51, 60);
+  transform: rotate(0deg) !important;
+  transition: 0.5s !important;
+}
+
+.iconActive {
+  color: rgb(37, 51, 60);
+  transform: rotate(180deg) !important;
+  transition: 0.5s !important;
+}

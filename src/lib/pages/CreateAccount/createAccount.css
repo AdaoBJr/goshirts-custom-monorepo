@@ -1,0 +1,140 @@
+.root {
+  width: 100%;
+}
+.root {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  min-width: 400px;
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(35, 0, 77, 0.2);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.genderBirth {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.dropCountryItems {
+  composes: items from '@goshirts-react-custom/core/src/components/Dropdown/dropdown.css';
+  width: 99%;
+}
+
+.dropCountryItemsActive {
+  composes: itemsActive from '@goshirts-react-custom/core/src/components/Dropdown/dropdown.css';
+  height: 305%;
+}
+
+.cpfPhone {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.checkNewsletter {
+  composes: root from '@goshirts-react-custom/core/src/components/InputText/inputText.css';
+  grid-template-columns: 20px 1fr;
+}
+
+.checkNewsletterLabel {
+  composes: label from '@goshirts-react-custom/core/src/components/InputText/inputText.css';
+  order: 1;
+}
+
+.checkNewsletterInput {
+  composes: input from '@goshirts-react-custom/core/src/components/InputText/inputText.css';
+  order: 0;
+}
+
+.checkNewsletterTextVisible {
+  composes: textVisible from '@goshirts-react-custom/core/src/components/InputText/inputText.css';
+  order: 2;
+}
+
+.checkNewsletterTextInvisible {
+  composes: textInvisible from '@goshirts-react-custom/core/src/components/InputText/inputText.css';
+  order: 3;
+}
+
+.passwordContainer {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.passwordContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid rgb(223, 225, 226);
+  border-radius: 4px;
+}
+
+.rootPassword {
+  display: grid;
+  gap: 0;
+  width: 100%;
+}
+
+.inputPassword {
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 0.9rem;
+  gap: 0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.passwordIcon {
+  margin: 0 0.75rem;
+}
+
+.iconPassword {
+  width: 100%;
+  color: rgb(223, 225, 226);
+  cursor: pointer;
+}
+
+.iconPassword:hover {
+  color: rgb(223, 225, 226, 0.5);
+}
+
+.buttonSubmit {
+  composes: button from '@goshirts-react-custom/core/src/components/Button/button.css';
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  color: rgb(43, 43, 43);
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+}
+
+.buttonSubmit:hover {
+  background-color: rgba(170, 191, 184, 0.7);
+  transition: 0.5s;
+}
+
+.buttonSubmit:disabled {
+  background-color: rgb(233, 233, 233);
+  cursor: default;
+  transition: 0.5s;
+}

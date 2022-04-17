@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.label {
+  font-size: 0.9rem;
+}
+
+.content {
+  width: 100%;
+}
