@@ -1,6 +1,7 @@
 {
   "name": "goshirts-react-custom",
   "version": "1.0.0",
+  "homepage": "goshirts-react-custom/",
   "private": true,
   "workspaces": [
     "packages/*"
